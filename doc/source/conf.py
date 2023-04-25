@@ -29,7 +29,7 @@ for doxyfile in doxy_list:
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "lbr_fri_ros2"
+project = "lbr_fri_ros2_stack"
 copyright = "2023, mhubii"
 author = "mhubii"
 release = "1.0.0"
