@@ -10,6 +10,10 @@ build:
     python: "3.8" # doxysphinx python >= 3.8
   apt_packages:
     - graphviz
+  jobs:
+    post_install:
+      - wget https://raw.githubusercontent.com/KCL-BMEIS/lbr_fri_ros2_stack/foxy/lbr_fri_ros2_stack/repos.yml
+      - vcs import < repos.yml
 
 python:
    install:

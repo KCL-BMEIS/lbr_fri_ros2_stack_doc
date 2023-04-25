@@ -1,7 +1,3 @@
-[submodule "lbr_fri_ros2_stack"]
-	path = lbr_fri_ros2_stack
-	url = https://github.com/KCL-BMEIS/lbr_fri_ros2_stack.git
-	branch = humble
 [submodule "doxygen-awesome-css"]
 	path = doxygen-awesome-css
 	url = https://github.com/jothepro/doxygen-awesome-css.git
