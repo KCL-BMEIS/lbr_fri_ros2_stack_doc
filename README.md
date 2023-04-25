@@ -1,5 +1,5 @@
 # lbr_fri_ros2_stack_doc
-[![Documentation Status](https://readthedocs.org/projects/lbr-fri-ros2-stack-doc/badge/?version=humble)](https://lbr-fri-ros2-stack-doc.readthedocs.io/en/humble/?badge=humble)
+[![Documentation Status](https://readthedocs.org/projects/lbr-fri-ros2-stack-doc/badge/?version=rolling)](https://lbr-fri-ros2-stack-doc.readthedocs.io/en/rolling/?badge=rolling)
 
 This repository holds the documentation for [lbr_fri_ros2_stack](https://github.com/KCL-BMEIS/lbr_fri_ros2_stack).
 
