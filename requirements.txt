@@ -1,2 +1,3 @@
 doxysphinx
 sphinx-mdinclude
+vcstool
