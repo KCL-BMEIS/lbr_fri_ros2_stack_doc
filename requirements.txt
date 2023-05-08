@@ -1,4 +1,5 @@
 doxysphinx
+pydata-sphinx-theme
 sphinxcontrib-doxylink
 sphinxcontrib-images
 sphinx-copybutton
