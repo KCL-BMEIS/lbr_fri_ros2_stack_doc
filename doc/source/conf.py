@@ -3,16 +3,16 @@ import subprocess
 
 doxy_list = [
     "fri.Doxyfile",
-    "lbr_fri_ros2.Doxyfile", # lbr_fri_ros2.Doxyfile requires tagfile of fri.Doxyfile
+    "lbr_fri_ros2.Doxyfile",  # lbr_fri_ros2.Doxyfile requires tagfile of fri.Doxyfile
 ]
 
 for doxyfile in doxy_list:
     doxyfile_name = doxyfile.split(".")[0]
 
     # generate doxygen
-    pathlib.Path(f"docs/doxygen/{doxyfile_name}").mkdir(
-        parents=True
-    )  # this is the doxygen OUTPUT_DIRECTORY
+    path = pathlib.Path(f"docs/doxygen/{doxyfile_name}")
+    if not path.exists():
+        path.mkdir(parents=True)  # this is the doxygen OUTPUT_DIRECTORY
     subprocess.run(f"doxygen {doxyfile}", shell=True)
 
     # convert doxygen to sphinx, source and build directory need
@@ -37,11 +37,40 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx_mdinclude"]
+extensions = [
+    "sphinx_mdinclude",
+    "sphinx_copybutton",
+    "sphinx.ext.autosectionlabel",
+    "sphinx_panels",
+    "sphinxcontrib.images",
+    "sphinxcontrib.doxylink",
+]
 
 templates_path = ["_templates"]
-exclude_patterns = []
+exclude_patterns = ["links.rst"]
 
+# Doxylink
+doxygen_root = "docs/doxygen"
+doxylink = {
+    "fri": (
+        f"{doxygen_root}/fri/html/tagfile.xml",
+        f"{doxygen_root}/fri/html",
+    ),
+    "lbr_fri_ros2": (
+        f"{doxygen_root}/lbr_fri_ros2/html/tagfile.xml",
+        f"{doxygen_root}/lbr_fri_ros2/html",
+    ),
+}
+
+# Make rst_epilog a variable, so you can add other epilog parts to it
+rst_epilog = ""
+
+# Read link all targets from file
+with open("docs/links.rst") as f:
+    rst_epilog += f.read()
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = "sphinx"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
