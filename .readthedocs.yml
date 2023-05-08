@@ -13,7 +13,7 @@ build:
   jobs:
     post_install:
       - wget https://raw.githubusercontent.com/KCL-BMEIS/lbr_fri_ros2_stack/rolling/lbr_fri_ros2_stack/repos.yml
-      - vcs import < repos.yml
+      - vcs import doc/source < repos.yml
 
 python:
    install:
