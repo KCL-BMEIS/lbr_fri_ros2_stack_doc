@@ -1,7 +1,7 @@
 # lbr_fri_ros2_stack_doc
 [![Documentation Status](https://readthedocs.org/projects/lbr-fri-ros2-stack-doc/badge/?version=rolling)](https://lbr-fri-ros2-stack-doc.readthedocs.io/en/rolling/?badge=rolling)
 
-This repository holds the documentation for [lbr_fri_ros2_stack](https://github.com/KCL-BMEIS/lbr_fri_ros2_stack).
+This repository holds the documentation for the [lbr_fri_ros2_stack](https://github.com/KCL-BMEIS/lbr_fri_ros2_stack).
 
 ## Acknowledgements
 <img src="https://www.kcl.ac.uk/newimages/Wellcome-EPSRC-Centre-medical-engineering-logo.xa827df3f.JPG?f=webp" alt="wellcome" height="45" width="65" align="left">
