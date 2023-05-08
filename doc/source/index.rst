@@ -19,4 +19,4 @@
    :hidden:
    :caption: Getting Involved
 
-   Source Code <https://github.com/kCL-BMEIS/lbr_fri_ros2_stack/tree/humble>
+   Source Code <https://github.com/kCL-BMEIS/lbr_fri_ros2_stack/tree/foxy>
