@@ -11,6 +11,7 @@ jobs:
       - name: Checkout submodules
         uses: actions/checkout@v3
         with:
+          ref: rolling
           submodules: true
       - name: Update submodules
         run: |
