@@ -2,21 +2,21 @@
     {
         "name": "humble",
         "version": "humble",
-        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/humble/lbr_fri_ros2_stack/lbr_fri_ros2/doc/lbr_fri_ros2.html"
+        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/humble/"
     },
     {
         "name": "rolling",
         "version": "rolling",
-        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/rolling/lbr_fri_ros2_stack/lbr_fri_ros2/doc/lbr_fri_ros2.html"
+        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/rolling/"
     },
     {
         "name": "galactic",
         "version": "galactic",
-        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/galactic/lbr_fri_ros2_stack/lbr_fri_ros2/doc/lbr_fri_ros2.html"
+        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/galactic/"
     },
     {
         "name": "foxy",
         "version": "foxy",
-        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/foxy/lbr_fri_ros2_stack/lbr_fri_ros2/doc/lbr_fri_ros2.html"
+        "url": "https://lbr-fri-ros2-stack-doc.readthedocs.io/en/foxy/"
     }
 ]
