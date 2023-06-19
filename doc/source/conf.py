@@ -77,7 +77,7 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "github_url": "https://github.com/kCL-BMEIS/lbr_fri_ros2_stack/tree/humble",
     "switcher": {
-        "version_match": "humble",
+        "version_match": "galactic",
         "json_url": "switcher.json",
     },
     "navbar_start": ["navbar-logo", "version-switcher"],
