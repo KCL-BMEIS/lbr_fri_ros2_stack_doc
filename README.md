@@ -3,6 +3,42 @@
 
 This repository holds the documentation for the [lbr_fri_ros2_stack](https://github.com/KCL-BMEIS/lbr_fri_ros2_stack).
 
+## Build Documentation Locally
+To build locally:
+1. Clone this repository
+
+```shell
+git clone --recursive git@github.com:KCL-BMEIS/lbr_fri_ros2_stack_doc.git
+cd lbr_fri_ros2_stack_doc
+```
+
+2. Clone the `lbr_fri_ros2_stack`, e.g. via (this uses [vcs](https://github.com/dirk-thomas/vcstool#how-to-install-vcstool))
+
+```shell
+wget https://raw.githubusercontent.com/KCL-BMEIS/lbr_fri_ros2_stack/humble/lbr_fri_ros2_stack/repos.yml
+vcs import doc/source < repos.yml
+```
+
+3. In [conf.py](doc/source/conf.py) change
+
+```python
+f"doxysphinx build . $READTHEDOCS_OUTPUT/html {doxyfile}", shell=True
+```
+
+to 
+
+```python
+f"doxysphinx build . html {doxyfile}", shell=True
+```
+
+Next, go to [doc/source](doc/source/) and run
+
+```shell
+python -m sphinx -T -E -b html -d _build/doctrees -D language=en . html
+```
+
+Open and browse the documentation by opening `doc/source/html/index.html`. 
+
 ## Acknowledgements
 <img src="https://www.kcl.ac.uk/newimages/Wellcome-EPSRC-Centre-medical-engineering-logo.xa827df3f.JPG?f=webp" alt="wellcome" height="45" width="65" align="left">
 
