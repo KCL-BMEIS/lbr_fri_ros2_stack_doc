@@ -75,10 +75,10 @@ pygments_style = "sphinx"
 
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
-    "github_url": "https://github.com/kCL-BMEIS/lbr_fri_ros2_stack/tree/humble",
+    "github_url": "https://github.com/kCL-BMEIS/lbr_fri_ros2_stack/tree/rolling",
     "switcher": {
         "version_match": "rolling",
-        "json_url": "switcher.json",
+        "json_url": "https://raw.githubusercontent.com/KCL-BMEIS/lbr_fri_ros2_stack_doc/rolling/doc/source/switcher.json",
     },
     "navbar_start": ["navbar-logo", "version-switcher"],
 }
