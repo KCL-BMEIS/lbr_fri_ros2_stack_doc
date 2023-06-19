@@ -17,9 +17,7 @@ for doxyfile in doxy_list:
 
     # convert doxygen to sphinx, source and build directory need
     # to follow https://boschglobal.github.io/doxysphinx/docs/getting_started.html#build
-    subprocess.run(
-        f"doxysphinx build . $READTHEDOCS_OUTPUT/html {doxyfile}", shell=True
-    )
+    subprocess.run(f"doxysphinx build . $READTHEDOCS_OUTPUT/html {doxyfile}", shell=True)
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -32,7 +30,7 @@ for doxyfile in doxy_list:
 project = "lbr_fri_ros2_stack"
 copyright = "2023, mhubii"
 author = "mhubii"
-release = "1.0.0"
+release = "1.1.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -76,6 +74,14 @@ pygments_style = "sphinx"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "pydata_sphinx_theme"
+html_theme_options = {
+    "github_url": "https://github.com/kCL-BMEIS/lbr_fri_ros2_stack/tree/humble",
+    "switcher": {
+        "version_match": "humble",
+        "json_url": "switcher.json",
+    },
+    "navbar_start": ["navbar-logo", "version-switcher"],
+}
 html_context = {
     "default_mode": "light"  # doxysphinx and dropdown don't work well with dark mode
 }
